@@ -1,0 +1,9 @@
+gitni boshlash.
+
+1) har yangi projecktni yaratganda githupga ulash shart.
+2) cd Desktop--> ls--> git clone (link of github projeckt)
+3) vscode dan
+    1. git status yangi file qo'shilgan bolsa qizil yozuv chiqadi
+    2. git add .
+    3. git commit -m"----coment-----"
+    4. git push

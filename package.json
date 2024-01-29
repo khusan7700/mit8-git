@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/khusan7700/mit8-git/issues"
   },
-  "homepage": "https://github.com/khusan7700/mit8-git#readme"
+  "homepage": "https://github.com/khusan7700/mit8-git#readme",
+  "dependencies": {
+    "inquirer": "^9.2.13",
+    "moment": "^2.30.1"
+  }
 }
