@@ -7,3 +7,14 @@ gitni boshlash.
     2. git add .
     3. git commit -m"----coment-----"
     4. git push
+
+   javascriptda
+   1. comn js           biz comn js ni ishlatamiz.
+   2. ESM  js mavjud  
+
+   npmjs.com saytidan kerakli functionlarni olish mumkin.
+
+   modul package ni 3 xili bor
+    1. Core
+    2. External
+    3. File         file o'zimiz yaratgan package hisoblanadi.

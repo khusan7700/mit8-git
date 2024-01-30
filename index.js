@@ -39,7 +39,7 @@
  
 
 //--------------------------External module----------------------------------------
-//--------------------------1-----------------------------
+//-------------------1-----------------
 // External modeuleni ishlatishdan oldin moment ustanovka qilish kk. (npm install moment --save)
 
 // const moment = require('moment');
@@ -56,10 +56,33 @@ yoki user input kiritish narsalar uchin ishlatiladi
 terminalda kiritgan jovobimiz vscodega borsin kabi vazifa
 */
 
-const inquirer = require("inquirer");
-inquirer
-.prompt([{type: "input", name: "raqam", message: "raqamni kiriting?"}])
-.then((answer) => { 
-    console.log("Man kiritgan raqam:", answer.raqam);
- })
-.catch((err) => console.log(err));
+// const inquirer = require("inquirer");
+// inquirer
+// .prompt([{type: "input", name: "raqam", message: "raqamni kiriting?"}])
+// .then((answer) => { 
+//     console.log("Man kiritgan raqam:", answer.raqam);
+//  })
+// .catch((err) => console.log(err));
+
+//--------------------------3-----------------------------
+// npm install validator--> bu qiymat qaytaradi.
+// pastda @ bor bolgani uchun true qaytaryapti agar bolmasa faulse qaytarar edi.
+
+// const validator = require("validator");
+
+// const test = validator.isEmail('foo@bar.com');
+// console.log("test:", test);
+
+//--------------------------4-----------------------------
+// npm install uuid
+
+// const { v4: uuidv4 } = require("uuid");
+// const random = uuidv4();
+// console.log("random:", random);
+
+
+//--------------------------File module----------------------------------------
+
+
+
+
