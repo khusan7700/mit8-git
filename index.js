@@ -83,6 +83,53 @@ terminalda kiritgan jovobimiz vscodega borsin kabi vazifa
 
 //--------------------------File module----------------------------------------
 
+// require --> modullar bilan masofaviy inport va export operatsi alamga oshiruvchi hisoblanadi.
+// ESM (EcmaScript modullari) bilan ishlashda, "import" va "export" operatorlarini ishlatiladi.
+
+// const calculate = require("./hisob.js");
+
+// const natija = calculate.kopaytirish(80, 20);
+// console.log("Natija:", natija);
+// console.log("***********");
+// //Natija: 1600
+
+// const natija2 = calculate.qoshish(70, 20);
+// console.log("Natija:", natija2);
+// console.log("***********");
+// //Natija: 90
+
+// const natija3 = calculate.ayrish(70, 20);
+// console.log("Natija:", natija3);
+// console.log("***********");
+// //Natija: 50
+
+// console.log(require("module").wrapper);
+//  '(function (exports, require, module, __filename, __dirname) { ','\n});'
 
 
+//console.log(arguments);
 
+const Account = require("./account");
+
+Account.tellMeAboutClass();
+// Natija--> Bu class accountlarni yasash uchun hizmat qiladi.
+
+Account.tellMeTime();
+//Natija--> Hozirgi vaqt 2024 01 31 06;46:49
+
+console.log("================");
+
+const myAccount = new Account('Martin', 20000, 42345235235);
+myAccount.giveMeDetails();
+// Natija--> salom hurmatli Martin sizning hisobingiz 20000ga teng
+// Natija--> Hisob raqamingiz: 42345235235
+
+myAccount.makeDeposit(1000000);
+// Natija--> hisobingiz to'ldirildi, hisobingiz 1020000$ tashkil etdi.
+
+// ferrari 400000 usd
+myAccount.withdrawMoney(400000);
+// Natija--> Hisobdan 400000 yechildi va qoldiq 620000$
+
+myAccount.makeDeposit(200000);
+// Natija--> hisobingiz to'ldirildi, hisobingiz 820000$ tashkil etdi.
